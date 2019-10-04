@@ -1,9 +1,9 @@
-RDFLINT_VERSION='0.0.8'
+RDFLINT_VERSION='0.0.9'
 class Rdflint < Formula
   desc "rdflint: RDF linter"
   homepage "https://github.com/imas/rdflint"
   url "https://jitpack.io/com/github/imas/rdflint/#{RDFLINT_VERSION}/rdflint-#{RDFLINT_VERSION}-all.jar"
-  sha256 "79d74cd74260386478459fdfb32403c0d2fcd8a6e39dfd87ff44191e4bd3d9ad"
+  sha256 "94feeca875a521307a3c4ba51e2806ea5ba664175569c8dc2d40860db0105cdc"
 
   depends_on :macos
   depends_on :java
