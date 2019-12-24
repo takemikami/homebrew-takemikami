@@ -1,4 +1,4 @@
-RDFLINT_VERSION='0.1.0'
+RDFLINT_VERSION='0.1.1'
 class Rdflint < Formula
   desc "rdflint: RDF linter"
   homepage "https://github.com/imas/rdflint"
