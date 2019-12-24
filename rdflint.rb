@@ -2,8 +2,8 @@ RDFLINT_VERSION='0.1.0'
 class Rdflint < Formula
   desc "rdflint: RDF linter"
   homepage "https://github.com/imas/rdflint"
-  url "https://jitpack.io/com/github/imas/rdflint/#{RDFLINT_VERSION}/rdflint-#{RDFLINT_VERSION}-all.jar"
-  sha256 "60771d91a268662279112c94570066fd45779b0c361ee8d0b9a959a20cf2aaa7"
+  url "https://jitpack.io/com/github/imas/rdflint/#{RDFLINT_VERSION}/rdflint-#{RDFLINT_VERSION}.jar"
+  sha256 "0d08a886646d11751a4c3648b25fbb49712cbf1ec67d30885d05ce2388023132"
 
   depends_on :macos
   depends_on :java
@@ -11,9 +11,9 @@ class Rdflint < Formula
   def install
     system "echo '#!/bin/sh' > rdflint"
     system "echo 'JAVA_HOME=$(/usr/libexec/java_home)' >> rdflint"
-    system "echo '$JAVA_HOME/bin/java' -jar #{libexec}/rdflint-#{RDFLINT_VERSION}-all.jar '$@' >> rdflint"
+    system "echo '$JAVA_HOME/bin/java' -jar #{libexec}/rdflint-#{RDFLINT_VERSION}.jar '$@' >> rdflint"
     system "chmod 555 rdflint"
-    libexec.install "rdflint-#{RDFLINT_VERSION}-all.jar"
+    libexec.install "rdflint-#{RDFLINT_VERSION}.jar"
     bin.install 'rdflint'
   end
 
